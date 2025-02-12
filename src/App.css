@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-bar  {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.social-icon a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.social-icon img {
+    width: 24px;
+    height: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.auth a{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+    margin: 10px 0;
+}
+
+.logo img {
+    width: 200px;
+}
+
+nav {
+    background-color: black;
+    padding: 20px 0;
+    border-bottom: 2px solid #222;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
 }
