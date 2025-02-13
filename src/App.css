@@ -14,16 +14,43 @@ body {
    padding: 20px 40px;
 }
 
+.social-icon{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
 .social-icon a {
     color: white;
     text-decoration: none;
     margin: 0 5px;
 }
 
-.social-icon img {
-    width: 24px;
+.social-icon img{
+    max-width: 100%;
     height: auto;
+    
 }
+
+.tiktok_icon{
+    width: 24px;
+}
+
+.instagram_icon{
+    width: 24px;
+}
+
+.twitter_icon{
+    width: 18px;
+}
+
+.facebook_icon{
+    width: 60px;
+}
+
+.youtube_icon{
+    width: 62px;
+}
+
 
 .auth a{
     color: white;
@@ -64,4 +91,34 @@ nav ul li a {
     font-weight: bold;
     position: relative;
     padding: 5px 0;
+}
+
+.title_carousel {
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+.title_carousel a {
+    text-decoration:none;
+    color: white;
+}
+
+.battle{
+    display: flex;
+    justify-content: space-between;
+    align-items: ;
+    margin-top: 12px;
+    padding: 20px;
+}
+
+.battle div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.battle img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
 }

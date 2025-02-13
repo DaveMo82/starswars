@@ -12,12 +12,12 @@ export default function App() {
     <header>
       <div className="top-bar">
         <div className="social-icon">
-          <a href="#"><img src="tiktok.svg" alt="tiktok" /></a>
-          <a href="#"><img src="instagram.png" alt="instgram" /></a>
-          <a href="#"><img src="twitter.webp" alt="twitter" /></a>
-          <a href="#"><img src="facebook.webp" alt="facebook" /></a>
-          <a href="#"><img src="youtube.png" alt="youtube" /></a>
-          <a href="#"><img src="kids.svg" alt="kids" /></a>
+          <a href="#"><img src="tiktok.svg" alt="tiktok" className="tiktok_icon"/></a>
+          <a href="#"><img src="instagram.png" alt="instgram" className="instagram_icon"/></a>
+          <a href="#"><img src="twitter.png" alt="twitter" className="twitter_icon"/></a>
+          <a href="#"><img src="facebook.svg" alt="facebook" className="facebook_icon"/></a>
+          <a href="#"><img src="youtube.svg" alt="youtube" className="youtube_icon"/></a>
+          <a href="#"><img src="kids.svg" alt="kids" className="kids_icon"/></a>
         </div>
       <div className="auth">
         <a href="#">🔍 SEARCH</a>
@@ -44,7 +44,16 @@ export default function App() {
 
     <main>
       <section>
+        <div className="title_carousel"><a href="#">stars wars on disney+</a></div>
         <Carousel />
+      </section>
+      <section className="battle">
+        <div className="darkmaul">
+          <img src="star-wars-darth-maul.jpg"/>
+        </div>
+        <div className="obiWan">
+          <img src="Obi-Wan-Kenobi.jpg"/>
+        </div>
       </section>
     </main>
 
