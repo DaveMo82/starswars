@@ -51,11 +51,25 @@ body {
     width: 62px;
 }
 
+.auth{
+    display: flex;
+    align-items: center;
+}
 
 .auth a{
     color: white;
     text-decoration: none;
     margin: 0 5px;
+}
+
+.lupe {
+    margin: 0 8px;
+}
+
+.login {
+    filter: invert(1);
+    margin: 0 12px;
+    height: 35px;
 }
 
 .logo {
@@ -106,7 +120,7 @@ nav ul li a {
 .battle{
     display: flex;
     justify-content: space-between;
-    align-items: ;
+    align-items:center;
     margin-top: 12px;
     padding: 20px;
 }
@@ -121,4 +135,43 @@ nav ul li a {
     max-width: 100%;
     height: auto;
     max-height: 500px;
+}
+
+footer {
+    border-top: 2px solid #222;
+    padding: 20px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 12px;
+}
+
+.mainpeople{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.mainpeople img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skywalker img{
+    height: 50%;
+}
+
+.leia img{
+    height: 50%;
 }

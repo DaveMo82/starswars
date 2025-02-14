@@ -17,11 +17,12 @@ export default function Carousel() {
             prevEl:".custom-swiper-button-prev"
         }}
         pagination={{clickable: true}}
-        autoplay={{ delay: 2000, disableOnInteraction: false}}
+        autoplay={{ delay: 5000, disableOnInteraction: false}}
         style={{ width: "85%", height: "700px" }}
         >
             <SwiperSlide><img src="slide1.jpeg" alt="Slide1" /></SwiperSlide>
             <SwiperSlide><img src="slide2.jpeg" alt="Slide2" /></SwiperSlide>
+            <SwiperSlide><img src="slide3.jpeg" alt="Slide3" /></SwiperSlide>
 
             <div className="custom-swiper-button-prev">❮</div>
     <div className="custom-swiper-button-next">❯</div>

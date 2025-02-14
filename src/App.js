@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 //import { increment, decrement } from "./store/counterSlice";
 import "./app.css";
 import Carousel from "./carousel";
+import Bildercarousel from "./BilderCarousel";
 
 export default function App() {
   const count = useSelector((state) => state.counter.value);
@@ -20,8 +21,8 @@ export default function App() {
           <a href="#"><img src="kids.svg" alt="kids" className="kids_icon"/></a>
         </div>
       <div className="auth">
-        <a href="#">🔍 SEARCH</a>
-        <a href="#">👤 LOG IN</a>
+        <a href="#"><img src="lupe.svg" alt="lupe" className="lupe"/> SEARCH</a>
+        <a href="#"><img src="login_icon.jpg" alt="login" className="login"/> LOG IN</a>
       </div>
         </div>
 
@@ -31,13 +32,13 @@ export default function App() {
 
       <nav>
         <ul>
-           <li><a href="#">NEWS + FEATURES</a></li>
-                <li><a href="#">VIDEO</a></li>
-                <li><a href="#">FILMS</a></li>
-                <li><a href="#">SERIES</a></li>
-                <li><a href="#">GAMES + INTERACTIVE</a></li>
-                <li><a href="#">DATABANK</a></li>
-                <li><a href="#">DISNEY+</a></li>
+            <li><a href="#">NEWS + FEATURES</a></li>
+            <li><a href="#">VIDEO</a></li>
+            <li><a href="#">FILMS</a></li>
+            <li><a href="#">SERIES</a></li>
+            <li><a href="#">GAMES + INTERACTIVE</a></li>
+            <li><a href="#">DATABANK</a></li>
+            <li><a href="#">DISNEY+</a></li>
         </ul>
       </nav>
     </header>
@@ -55,10 +56,30 @@ export default function App() {
           <img src="Obi-Wan-Kenobi.jpg"/>
         </div>
       </section>
+      <section className="mainpeople">
+        <div className="skywalker">
+          <img src="Skywalker.webp"/>
+        </div>
+        <div className="darth">
+          <img src="Darth_Vader.jpg"/>
+        </div>
+        <div className="leia">
+          <img src="Leia.webp"/>
+        </div>
+      </section>
+      <Bildercarousel />
     </main>
 
     <footer>
-      <p>Copyright 2025</p>
+        <ul>
+            <li><a href="#">Term of USe</a></li>
+            <li><a href="#">Additional Content Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Children's Online Privacy Policy</a></li>
+            <li><a href="#">Your US State Privacy Rights</a></li>
+            <li><a href="#">Disney Store | Star Wars</a></li>
+            <li><a href="#">Star Wars Helpdesk</a></li>
+        </ul>
     </footer>
     </body>
   );
