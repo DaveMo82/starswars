@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import "./app.css";
 import Carousel from "./carousel";
 import Bildercarousel from "./BilderCarousel";
-import Login from "./Login/login";
+import Login from "./Login/Login";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <Router>
-      <body>
+      <div className="body">
         <header>
           <div className="top-bar">
             <div className="social-icon">
@@ -76,7 +76,7 @@ export default function App() {
                 <Bildercarousel />
               </>
             } />
-            <Route path="/login" element={<Login />} />
+            <Route path="/Login" element={<Login />} />
           </Routes>
         </main>
 
@@ -91,7 +91,7 @@ export default function App() {
             <li><a href="#">Star Wars Helpdesk</a></li>
           </ul>
         </footer>
-      </body>
+      </div>
     </Router>
   );
 }
